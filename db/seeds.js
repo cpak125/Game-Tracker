@@ -26,3 +26,11 @@ const chris = new User({
 
 })
 
+User.deleteMany()
+    .then(() => {
+        return User.insertMany([chris])
+    })
+    .then(() => {
+        console.log('Done Seeding!')
+        mongoose.connection.close()
+    })

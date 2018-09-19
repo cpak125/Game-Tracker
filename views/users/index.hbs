@@ -1,0 +1,9 @@
+<h1>All Users<a href='/users/new'>(Create New User)</a></h1>
+
+<p>Click to go to user</p>
+
+<div>
+    {{#each users}}
+        <div>  <a href='users/{{this._id}}'><h3>{{this.username}}</h3></a></div>
+    {{/each}}
+</div>
