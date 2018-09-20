@@ -1,11 +1,8 @@
-
+{{#each teams}}
 <div>
-    {{#each teams}}
     <ul>
-        <div>
-            Name: {{this.name}}
-            Sport:{{this.sport}}
-            {{!-- <a href='/users/{{../userId}}/teams/{{this._id}}'>Go to Team</a> --}}
+        <li>Name: {{this.name}}</li>
+        <li>Sport: {{this.sport}}</li>
     </ul>
-    {{/each}}
 </div>
+{{/each}}
