@@ -16,5 +16,30 @@ router.get('/new', (req, res) => {
   res.render('users/new')
 })
 
+// SHOW,SHOW ONE
+
+
+
+// EDIT, RENDER EDIT FORM
+
+
+
+// CREATE
+router.post('/', (req, res) => {
+  User.create(req.body)
+    .then((user) => {
+      res.redirect(`/users/${user._id}`)
+    })
+
+})
+
+
+// UPDATE
+
+
+
+//DELETE
+
+
 
 module.exports = router
