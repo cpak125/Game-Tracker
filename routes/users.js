@@ -11,4 +11,10 @@ router.get('/', function (req, res) {
 
 })
 
+// NEW, RENDER NEW FORM
+router.get('/new', (req, res) => {
+  res.render('users/new')
+})
+
+
 module.exports = router
