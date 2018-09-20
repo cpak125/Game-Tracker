@@ -8,7 +8,6 @@ router.get('/', function (req, res) {
     .then((users) => {
       res.render('users/index', { users })
     })
-
 })
 
 // NEW, RENDER NEW FORM
@@ -22,6 +21,7 @@ router.get('/:id', (req, res) => {
     .then((user) => {
       res.render('users/show', { user })
     })
+ 
 })
 
 // EDIT, RENDER EDIT FORM
@@ -33,7 +33,6 @@ router.get('/:id/edit', (req, res) => {
 
 })
 
-
 // CREATE
 router.post('/', (req, res) => {
   User.create(req.body)
@@ -42,7 +41,6 @@ router.post('/', (req, res) => {
     })
 
 })
-
 
 // UPDATE
 router.put('/:id', (req, res) => {

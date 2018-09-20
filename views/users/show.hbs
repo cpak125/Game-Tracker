@@ -1,12 +1,15 @@
 <h1>{{user.username}}</h1>
-{{user.teams.name}}
 
-<div><a href ='/users/{{user._id}}/edit'>Edit User</a></div>
+<a href='/users/{{user._id}}/teams'><h2>See {{user.username}}'s Teams </h2></a>
 
+
+<div><a href='/users/{{user._id}}/edit'>Edit User</a></div>
+<br>
 <a href='/users'> Go back to Users</a>
 <br>
+<br>
 <div>
-<form action='/users/{{user._id}}?_method=DELETE' method='POST'>
-    <input type="submit" value='Delete User'>
-</form>
+    <form action='/users/{{user._id}}?_method=DELETE' method='POST'>
+        <input type="submit" value='Delete User'>
+    </form>
 </div>
