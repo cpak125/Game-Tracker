@@ -62,11 +62,21 @@ router.post('/', (req, res) => {
 
 
 //DELETE
+
 router.delete('/:id', (req, res) => {
-    User.findByIdAndRemove(req.params.id)
-      .then(() => {
-        res.redirect('/teams')
-      })
-  })
+    User.findById(req.params.userId)
+        .then((user)=> {
+            user.teams.remove(req.params.id)
+            return user.save()
+
+        })
+        .then (()=> {
+            res.redirect(`/users/${req.params.userId}/teams`)
+
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+})
 
 module.exports = router
