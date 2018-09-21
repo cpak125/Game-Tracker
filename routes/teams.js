@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
     User.findById(req.params.userId)
         .then((user) => {
             res.render('teams/index', {
+                user,
                 userId: req.params.userId,
                 teams: user.teams
             })
@@ -27,8 +28,15 @@ router.get('/new', (req, res) => {
 
 
 // SHOW,SHOW ONE
-
-
+router.get('/:id', (req, res) => {
+    User.findById(req.params.userId)
+        .then((user) => {
+            res.render('teams/show', {
+                userId: req.params.userId,
+                team: user.teams.id(req.params.id)
+            })
+        })
+})
 
 // EDIT, RENDER EDIT FORM
 
@@ -54,5 +62,11 @@ router.post('/', (req, res) => {
 
 
 //DELETE
+router.delete('/:id', (req, res) => {
+    User.findByIdAndRemove(req.params.id)
+      .then(() => {
+        res.redirect('/teams')
+      })
+  })
 
 module.exports = router
