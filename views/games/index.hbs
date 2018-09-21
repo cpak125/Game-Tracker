@@ -1,7 +1,14 @@
+<h1>{{team.name}}'s Games</h1>
+
+
 {{#each games}}
 <div>
     <ul>
-        <a href='/users/{{../userId}}/teams/{{this._id}}'><li>{{this.date}}</li></a>
+        <li><h3>{{this.date}}</h3></li>
+        <li>Opponent: {{this.opposingTeam}}</li>
+        <li>Where: {{this.location}}</li>
+        <li> When: {{this.time}}</li>
+
     </ul>
 </div>
 {{/each}}

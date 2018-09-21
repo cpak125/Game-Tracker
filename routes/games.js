@@ -8,10 +8,12 @@ router.get('/', (req, res) => {
     .then((user) => {
         const team = user.teams.id(req.params.teamId)
         const games = team.games
-        res.render('teams/index', {
+        res.render('games/index', {
             userId: req.params.userId,
             teamId: req.params.teamId,
+            team,
             games
+            
         })
     })
     
