@@ -1,13 +1,18 @@
-<h1>{{team.name}}'s Games</h1>
+<h1>{{team.name}}'s Games</h1><a href='/users/{{userId}}/teams/{{teamId}}/games/new'>Add New Game</a>
+
 
 
 {{#each games}}
 <div>
     <ul>
-        <li><h3>{{this.date}}</h3></li>
-        <li>Opponent: {{this.opposingTeam}}</li>
-        <li>Where: {{this.location}}</li>
-        <li> When: {{this.time}}</li>
+        <li>
+            <h3>{{this.date}}</h3>
+        </li>
+        <b>Opponent:</b> {{this.opposingTeam}}
+        <br>
+        <b>Where:</b> {{this.location}}
+        <br>
+        <b>When:</b> {{this.time}}
 
     </ul>
 </div>

@@ -54,6 +54,9 @@ router.post('/', (req, res) => {
         .then(() => {
             res.redirect(`/users/${req.params.userId}/teams`)
         })
+        .catch((error) => {
+            console.log(error)
+        })
 })
 
 

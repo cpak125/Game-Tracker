@@ -14,10 +14,18 @@ const _11_8_18 = new Game({
 
 })
 
+const _12_25_18 = new Game({
+    location: 'Boston',
+    opposingTeam: 'Boston Celtics',
+    date:'12/25/18',
+    time: '7:30 PM'
+
+})
+
 const lakers = new Team({
     name: 'Los Angeles Lakers',
     sport: 'NBA',
-    games: [_11_8_18]
+    games: [_11_8_18,_12_25_18]
 })
 
 const chris = new User({

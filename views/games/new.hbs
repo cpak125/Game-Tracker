@@ -1,0 +1,11 @@
+<h1>Add New Game</h1>
+
+<form action='/users/{{userId}}/teams/{{teamId}}/games' method='POST'>
+    <div>Opponent: <input type='text' name='opposingTeam'></div>
+    <div>Date(MM/DD/YY): <input type='text' name='date'></div>
+    <div>Game Location(City): <input type='text' name='location'></div>
+    <div>What Time: <input type='text' name='time'></div>
+
+    <div><input type='submit' value='Add New Game'></div>
+
+</form>
