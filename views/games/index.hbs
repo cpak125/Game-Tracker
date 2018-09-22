@@ -6,13 +6,20 @@
 <div>
     <ul>
         <li>
-            <h3>{{this.date}}</h3>
+            <h3>{{this.date}} <form action='games/{{this._id}}?_method=DELETE' method='POST'>
+                    <input type="submit" value='Remove Game'>
+                </form>
+            </h3>
         </li>
+
         <b>Opponent:</b> {{this.opposingTeam}}
         <br>
         <b>Where:</b> {{this.location}}
         <br>
         <b>When:</b> {{this.time}}
+        <br>
+        <br>
+
 
     </ul>
 </div>
