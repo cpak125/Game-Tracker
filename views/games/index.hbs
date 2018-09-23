@@ -1,16 +1,11 @@
-<h1>{{team.name}}'s Games</h1><a href='/users/{{userId}}/teams/{{teamId}}/games/new'>Add New Game</a>
+<h1>{{team.name}}'s Games(<a href='/users/{{userId}}/teams/{{teamId}}/games/new'>Add New Game</a>)</h1>
 
 
 
 {{#each games}}
 <div>
     <ul>
-        <li>
-            <h3>{{this.date}} <form action='games/{{this._id}}?_method=DELETE' method='POST'>
-                    <input type="submit" value='Remove Game'>
-                </form>
-            </h3>
-        </li>
+        <h3>{{this.date}} </h3>
 
         <b>Opponent:</b> {{this.opposingTeam}}
         <br>
@@ -20,7 +15,10 @@
         <br>
         <br>
 
-
+        <form action='games/{{this._id}}?_method=DELETE' method='POST'>
+            <input type="submit" value='Remove Game'>
+        </form>
     </ul>
 </div>
 {{/each}}
+<a href='/users/{{userId}}/teams/{{teamId}}'>Go Back to Team</a>

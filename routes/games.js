@@ -65,7 +65,6 @@ router.delete('/:id', (req, res) => {
     User.findById(req.params.userId)
         .then((user) => {
             const team = user.teams.id(req.params.teamId)
-            // // const game = team.games.id(req.params.gameId)
             team.games.remove(req.params.id)
             return user.save()
 

@@ -1,8 +1,90 @@
+*{
+  font-family: 'Arvo', serif;
+
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #4f5d75;
+  /* width: 100%; */
+  height: auto;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
 a {
-  color: #00B7FF;
+  color: #EF8354;
+ 
 }
+a:hover{
+color:white;
+}
+
+body.home{
+  background-image: url('/images/pexels-photo-139762.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+p.home{
+  width:50%;
+  color:white;
+  background-color: rgba(79,93,117, .6);
+  font-size:20px;
+  border-radius: 4px;
+
+
+}
+h1{
+  color: #2d3142;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+h1.home{
+  color: #Ef8354;
+  text-transform: uppercase;
+  font-weight: 2000; 
+  font-size: 60px;
+
+
+}
+
+h3.white{
+  color:white;
+}
+
+.homeButton {
+  font-size: 16px;
+  
+}
+.homeButton:hover{
+  background-color: #2d3142;
+
+}
+
+button, input { 
+  background: #Ef8354;
+  color:white;
+  border-radius: 10px;
+  font-size: 18px;
+
+}
+button:hover{
+  background-color: #2d3142;
+}
+input:hover{
+background-color: #2d3142;
+}
+
+div{
+  color: white;
+  font-size: 18px;
+}
+
