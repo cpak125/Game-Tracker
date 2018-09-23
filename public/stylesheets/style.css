@@ -52,8 +52,10 @@ h1.home{
   text-transform: uppercase;
   font-weight: 2000; 
   font-size: 60px;
+}
 
-
+h2.see-games{
+  font-size: 24px;
 }
 
 h3.white{
@@ -73,7 +75,7 @@ button, input {
   background: #Ef8354;
   color:white;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 16px;
 
 }
 button:hover{

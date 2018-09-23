@@ -1,17 +1,18 @@
-<h1>{{team.name}}({{team.sport}})</h1>
+<h1>{{team.name}} ({{team.sport}})</h1>
 
 
 <br>
-<a href='/users/{{userId}}/teams/{{team._id}}/games'>See Games</a>
+<h2 class = "see-games"><a href='/users/{{userId}}/teams/{{team._id}}/games'>See Games</a></h2>
 <br>
 <br>
-<a href='/users/{{userId}}/teams'> Go back to Teams</a>
 
+
+<a href='/users/{{userId}}/teams'> <button>Go back to Teams</button></a>
+<br>
 <br>
 <br>
 <form action='/users/{{userId}}/teams/{{team._id}}?_method=DELETE' method='POST'>
     <input type="submit" value='Delete Team'>
 </form>
 
-{{!-- <div><a href ='/users/{{userId}}/teams/{{team._id}}edit'>Edit Team</a></div> --}}
 

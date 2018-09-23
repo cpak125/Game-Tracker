@@ -2,10 +2,15 @@
 
 <form action='/users/{{userId}}/teams/{{teamId}}/games' method='POST'>
     <div>Opponent: <input type='text' name='opposingTeam'></div>
+    <br>
     <div>Date(MM/DD/YY): <input type='text' name='date'></div>
+    <br>
     <div>Game Location(City): <input type='text' name='location'></div>
-    <div>What Time: <input type='text' name='time'></div>
-
+    <br>
+    <div>Start Time: <input type='text' name='time'></div>
+    <br>
     <div><input type='submit' value='Add New Game'></div>
 
 </form>
+<br>
+<a href='/users/{{userId}}/teams/{{teamId}}/games'><button>Cancel</button></a>
