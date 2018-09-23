@@ -90,3 +90,7 @@ div{
   font-size: 18px;
 }
 
+.game-date{
+  text-decoration:underline; 
+}
+

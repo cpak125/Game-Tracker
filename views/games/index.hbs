@@ -3,22 +3,23 @@
 
 
 {{#each games}}
-<div>
-    
-        <h3>{{this.date}} </h3>
+<div class='game-container'>
+ 
+        <h3 class='game-date'>{{this.date}} </h3>
 
-        <b>Opponent:</b>  {{this.opposingTeam}}
+        <b>Opponent:</b> {{this.opposingTeam}}
         <br>
-        <b>Where:</b>  {{this.location}}
+        <b>Where:</b> {{this.location}}
         <br>
-        <b>When:</b>  {{this.time}}
+        <b>When:</b> {{this.time}}
         <br>
         <form action='games/{{this._id}}?_method=DELETE' method='POST'>
             <input type="submit" value='Remove Game'>
         </form>
         <br>
         <br>
-    
+  
+
 </div>
 {{/each}}
 

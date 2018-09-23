@@ -61,7 +61,7 @@ router.post('/', (req, res) => {
 
 //DELETE
 router.delete('/:id', (req, res) => {
-     
+
     User.findById(req.params.userId)
         .then((user) => {
             const team = user.teams.id(req.params.teamId)

@@ -21,7 +21,7 @@ router.get('/:id', (req, res) => {
     .then((user) => {
       res.render('users/show', { user })
     })
- 
+
 })
 
 // EDIT, RENDER EDIT FORM

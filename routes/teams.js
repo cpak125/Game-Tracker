@@ -68,12 +68,12 @@ router.post('/', (req, res) => {
 
 router.delete('/:id', (req, res) => {
     User.findById(req.params.userId)
-        .then((user)=> {
+        .then((user) => {
             user.teams.remove(req.params.id)
             return user.save()
 
         })
-        .then (()=> {
+        .then(() => {
             res.redirect(`/users/${req.params.userId}/teams`)
 
         })
