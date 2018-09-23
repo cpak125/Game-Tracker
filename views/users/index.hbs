@@ -2,12 +2,13 @@
 
 <h1>All Users</h1>
 <h3><a href='/users/new'> <button>Create New User</button></a></h3>
+<br>
 
 <h3 class='white'>*Click to go to User*</h3>
 
 <div>
     {{#each users}}
-          <a href='users/{{this._id}}'><h3>{{this.username}}</h3></a>
+          <a href='/users/{{this._id}}'><h3>{{this.username}}</h3></a>
     {{/each}}
 </div>
 
