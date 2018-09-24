@@ -17,7 +17,7 @@ const _11_21_18 = new Game({
 const _2_7_19 = new Game({
     location: 'Boston',
     opposingTeam: 'Boston Celtics',
-    date:'2/7/19',
+    date:'02/7/19',
     time: '8:00 PM'
 
 })

@@ -3,20 +3,6 @@ const router = express.Router({ mergeParams: true });
 const { User, Team } = require('../db/schema')
 
 // INDEX, SHOW ALL
-// router.get('/', (req, res) => {
-//     User.findById(req.params.userId)
-//         .then((user) => {
-//             res.render('teams/index', {
-//                 user,
-//                 userId: req.params.userId,
-//                 teams: user.teams
-//             })
-//         })
-//         .catch(error => {
-//             console.log(error)
-//         })
-// })
-
 
 
 // NEW, RENDER NEW FORM
