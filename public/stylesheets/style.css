@@ -7,7 +7,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: #4f5d75;
-  /* width: 100%; */
+  /* max-width: 100%; */
   height: auto;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
@@ -23,7 +23,8 @@ color:white;
 body.home{
   background-image: url('/images/pexels-photo-139762.jpeg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -37,9 +38,8 @@ p.home{
   background-color: rgba(79,93,117, .6);
   font-size:20px;
   border-radius: 4px;
-
-
 }
+
 h1{
   color: #2d3142;
   font-size: 40px;
@@ -70,16 +70,21 @@ h3.white{
   background-color: #2d3142;
 
 }
-.edit{
-  font-size: 12px;
-}
+
 button, input { 
   background: #Ef8354;
   color:white;
   border-radius: 10px;
-  font-size: 16px;
-
+  font-size: 14px;
 }
+.edit{
+  font-size: 14px;
+}
+.remove{
+  font-size: 14px;
+}
+
+
 button:hover{
   background-color: #2d3142;
 }

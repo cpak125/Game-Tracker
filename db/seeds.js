@@ -6,26 +6,26 @@ const Schema = require('./schema')
 
 const { User, Team, Game } = Schema
 
-const _11_8_18 = new Game({
-    location: 'Los Angeles',
+const _11_21_18 = new Game({
+    location: 'Cleveland',
     opposingTeam: 'Cleveland Cavaliers',
     date:'11/8/18',
-    time: '7:30 PM'
+    time: '8:00 PM'
 
 })
 
-const _12_25_18 = new Game({
+const _2_7_19 = new Game({
     location: 'Boston',
     opposingTeam: 'Boston Celtics',
-    date:'12/25/18',
-    time: '7:30 PM'
+    date:'2/7/19',
+    time: '8:00 PM'
 
 })
 
 const lakers = new Team({
     name: 'Los Angeles Lakers',
     sport: 'NBA',
-    games: [_11_8_18,_12_25_18]
+    games: [_11_21_18,_2_7_19]
 })
 
 const chris = new User({
