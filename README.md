@@ -16,7 +16,7 @@ For project #2, I created a game tracker app. This app allows users to track and
 6. Mongoose
 
 ## ERD
-![alt text](images/ERD.jpg)
+![alt text](https://github.com/cpak125/Project-2-Game-Tracker/blob/master/public/images/ERD.jpg)
 ## Wireframe
-
+![alt text](https://github.com/cpak125/Project-2-Game-Tracker/blob/master/public/images/wireframe.JPG)
 ## Future Development
