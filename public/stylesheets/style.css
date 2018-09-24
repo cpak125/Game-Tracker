@@ -1,6 +1,5 @@
 *{
   font-family: 'Arvo', serif;
-
 }
 
 body {
@@ -14,8 +13,8 @@ body {
 
 a {
   color: #EF8354;
- 
 }
+
 a:hover{
 color:white;
 }
@@ -23,15 +22,14 @@ color:white;
 body.home{
   background-image: url('/images/pexels-photo-139762.jpeg');
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
 }
+
 p.home{
   width:50%;
   color:white;
@@ -54,42 +52,46 @@ h1.home{
   font-size: 60px;
 }
 
-h2.see-games{
+h2{
   font-size: 24px;
 }
 
-h3.white{
+h3{
   color:white;
 }
 
 .homeButton {
   font-size: 16px;
-  
 }
+
 .homeButton:hover{
   background-color: #2d3142;
-
 }
 
 button, input { 
   background: #Ef8354;
   color:white;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .edit{
   font-size: 14px;
 }
-.remove{
-  font-size: 14px;
-}
 
+input:hover{
+  background-color: #2d3142
+}
 
 button:hover{
   background-color: #2d3142;
+} 
+
+.remove{
+  font-size:14px;
 }
-input:hover{
-background-color: #2d3142;
+
+.remove:hover{
+  background-color: red;
 }
 
 div{

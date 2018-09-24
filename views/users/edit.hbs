@@ -5,11 +5,11 @@
     <div>Username: <input type='text' name='username' value='{{user.username}}'></div>
     <br>
     <br>
-    <div><input type='submit' value='Update User'></div>
+    <div><input class='update' type='submit' value='Update User'></div>
 
 </form>
 <br>
 <br>
 <form action='/users/{{user._id}}?_method=DELETE' method='POST'>
-    <input type="submit" value='Delete User'>
+    <input class='remove' type="submit" value='Delete User'>
 </form>

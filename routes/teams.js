@@ -5,6 +5,8 @@ const { User, Team } = require('../db/schema')
 // INDEX, SHOW ALL
 
 
+
+
 // NEW, RENDER NEW FORM
 router.get('/new', (req, res) => {
     res.render('teams/new', {
