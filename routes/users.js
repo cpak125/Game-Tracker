@@ -1,6 +1,6 @@
 var express = require('express')
 var router = express.Router()
-const { User } = require('../db/schema')
+const { User, Team } = require('../db/schema')
 
 //INDEX, SHOW ALL USERS
 router.get('/', function (req, res) {
@@ -19,7 +19,12 @@ router.get('/new', (req, res) => {
 router.get('/:id', (req, res) => {
   User.findById(req.params.id)
     .then((user) => {
-      res.render('users/show', { user })
+      res.render('users/show', { 
+        user,
+        teams: user.teams,
+        userId: req.params.userId
+
+       })
     })
 
 })
@@ -36,8 +41,8 @@ router.get('/:id/edit', (req, res) => {
 // CREATE
 router.post('/', (req, res) => {
   User.create(req.body)
-    .then((user) => {
-      res.redirect(`/users/${user._id}`)
+    .then(() => {
+      res.redirect('/users/')
     })
 
 })
@@ -45,8 +50,8 @@ router.post('/', (req, res) => {
 // UPDATE
 router.put('/:id', (req, res) => {
   User.findByIdAndUpdate(req.params.id, req.body)
-    .then((user) => {
-      res.redirect(`/users/${user._id}`)
+    .then(() => {
+      res.redirect('/users/')
     })
 
 })
@@ -56,7 +61,7 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   User.findByIdAndRemove(req.params.id)
     .then(() => {
-      res.redirect('/users')
+      res.redirect('/users/')
     })
 })
 

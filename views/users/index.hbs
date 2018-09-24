@@ -1,4 +1,4 @@
-<a href= '/'><button class= 'homeButton'>Home</button></a>
+<a href='/'><button class='homeButton'>Home</button></a>
 
 <h1>All Users</h1>
 <h3><a href='/users/new'> <button>Create New User</button></a></h3>
@@ -8,8 +8,10 @@
 
 <div>
     {{#each users}}
-          <a href='/users/{{this._id}}'><h3>{{this.username}}</h3></a>
+    <a href='/users/{{this._id}}'>
+        <h3>{{this.username}} | <a href='/users/{{this._id}}/edit'><button class='edit'>Edit User</button></a>
+        </h3>
+    </a>
+
     {{/each}}
 </div>
-
-

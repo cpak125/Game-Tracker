@@ -70,7 +70,9 @@ h3.white{
   background-color: #2d3142;
 
 }
-
+.edit{
+  font-size: 12px;
+}
 button, input { 
   background: #Ef8354;
   color:white;
