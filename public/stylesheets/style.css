@@ -41,8 +41,9 @@ h1{
   color: #2d3142;
   font-size: 40px;
   text-align: center;
+  margin:0;
 
-}
+} 
 
 h1.home{
   color: #Ef8354;
@@ -103,4 +104,5 @@ div{
 .game-date{
   text-decoration:underline; 
 }
+
 
