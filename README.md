@@ -9,7 +9,7 @@ Gametracker consists of the following models: A user, team, and game. The User m
 
 [Trello Board](https://trello.com/b/sfcacg7f/wdi17-project-2)
 
-[Github Repo](https://github.com/cpak125/Project-2-Game-Tracker)
+[Github](https://github.com/cpak125/Project-2-Game-Tracker)
 
 ## Technologies Used
 1. HTML5
