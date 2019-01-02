@@ -15,17 +15,8 @@ router.get('/new', (req, res) => {
 })
 
 
-// SHOW,SHOW ONE
-router.get('/:id', (req, res) => {
-    User.findById(req.params.userId)
-        .then((user) => {
-            res.render('teams/show', {
-                userId: req.params.userId,
-                team: user.teams.id(req.params.id),
-                
-            })
-        })
-})
+// // SHOW,SHOW ONE
+
 
 // EDIT, RENDER EDIT FORM
 
